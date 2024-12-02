@@ -8,7 +8,7 @@ export default function Home() {
         <div className="grid grid-cols-12 h-screen w-screen">
           <div className="col-span-3">
             <div className="">
-
+              <Image src="/twitter-logo.png" alt="Twitter Logo" width={100} height={100} />
             </div>
           </div>
           <div className="col-span-6"></div>
