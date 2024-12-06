@@ -1,10 +1,8 @@
 import Image from "next/image";
-import {Inter} from "next/font/google";
 import { BsBell, BsBookmark, BsEnvelope, BsTwitterX } from "react-icons/bs";
 import { BiBell, BiHash, BiHomeCircle, BiUser } from "react-icons/bi";
 import FeedCard from "@/components/FeedCard";
 
-const inter = Inter({subsets: ["latin"]});
 
 interface TwitterSidebarButton{
   title: string;
@@ -41,7 +39,6 @@ const SidebarMenuItems: TwitterSidebarButton[] = [
 export default function Home(){
   return (
     <>
-    <div className="Inter">
         <div className="grid grid-cols-12  h-screen w-screen px-56">
           <div className="col-span-3 pt-8">
             <div className="text-3xl h-fit hover:bg-gray-800 rounded-full p-2 w-fit cursor-pointer">
@@ -58,13 +55,12 @@ export default function Home(){
               </div>
             </div>
           </div>
-          <div className="col-span-6 border-r-[1px] border-l-[1px] border-t-0 border border-gray-600">
+          <div className="col-span-5 border-r-[1px] border-l-[1px] border-t-0 border border-gray-600">
                 <FeedCard />
                 <FeedCard />
                 <FeedCard />
           </div>
           <div className="col-span-3"></div>
-        </div>
         </div>
     </>
   );
