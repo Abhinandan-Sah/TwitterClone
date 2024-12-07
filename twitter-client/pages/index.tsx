@@ -34,6 +34,10 @@ const SidebarMenuItems: TwitterSidebarButton[] = [
     title:'Profile',
     icon: <BiUser />
   },
+  {
+    title:'Profile',
+    icon: <BiUser />
+  }
 ]
 
 export default function Home(){
