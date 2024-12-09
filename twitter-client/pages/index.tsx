@@ -39,7 +39,7 @@ const SidebarMenuItems: TwitterSidebarButton[] = [
     icon: <BiUser />
   },
   {
-    title:'Profile',
+    title:'Profileii',
     icon: <BiUser />
   }
 ]
