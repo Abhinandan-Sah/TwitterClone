@@ -9,7 +9,8 @@ export async function initServer(){
     const graphqlServer = new ApolloServer({
         typeDefs:
         `type Query {
-        sayHello: String}
+        sayHello: String
+        sayHelloToMe(name: String!): String}
         `,
         resolvers: {
             Query: {

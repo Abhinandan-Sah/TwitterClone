@@ -23,7 +23,8 @@ function initServer() {
         app.use(body_parser_1.default.json());
         const graphqlServer = new server_1.ApolloServer({
             typeDefs: `type Query {
-        sayHello: String}
+        sayHello: String
+        sayHelloToMe(name: String!): String}
         `,
             resolvers: {
                 Query: {
