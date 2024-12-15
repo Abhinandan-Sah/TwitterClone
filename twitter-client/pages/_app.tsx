@@ -8,6 +8,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 // const clientId = process.env.NEXT_PUBLIC_CLIENT_ID;
 const clientId: string = process.env.NEXT_PUBLIC_CLIENT_ID as string;
 
+console.log(clientId);
 
 if (!clientId) {
   throw new Error("NEXT_PUBLIC_CLIENT_ID is not set in the environment variables");
